@@ -2,7 +2,7 @@
 
 Tex je také dostupný v [angličtině](README.md).
 
-Nadpisy označené kurzívou nejsou součástí základní definice markdownu a mohou tedy na méně pokročilých platformách pro markdown zůstávat v původním tvaru.
+Tento text je shrnutí syntaxu pro jayk Makrdown, jelikož některé věci, které nepoužívám moc často pravidelně zapomínám, tak jsem si je sepsal. Nadpisy označené kurzívou nejsou součástí základní definice Markdownu a mohou tedy na méně pokročilých platformách pro markdown zůstávat v původním tvaru. Bez toho, aby vytvořili požadovanou grafiku. Na závěr souboru jsou ještě zmíněná některá rošiření, která do markdownu přidává rozšíření [markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/), které je dostupné pro [Atom](https://atom.io) [VS Code](https://code.visualstudio.com).
 
 __TOC__
 1. [Nadpisy](#titles)
