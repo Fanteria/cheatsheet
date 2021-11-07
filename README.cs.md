@@ -1,12 +1,19 @@
 # Markdown cheat sheet
 
-Read this in other languages: [English](README.md), [Česky](README.cs.md)
-
-[TOC]
+Tex je také dostupný v [angličtině](README.md).
 
 Nadpisy označené kurzívou nejsou součástí základní definice markdownu a mohou tedy na méně pokročilých platformách pro markdown zůstávat v původním tvaru.
 
-## Nadpisy
+__TOC__
+1. [Nadpisy](#titles)
+2. [Odstavce](#paragraphs)
+3. [Seznamy](#lists)
+4. [Tabulky](#tables)
+5. [Reference](#references)
+6. [_Kód_](#code)
+7. [_Emotikony_](#Emotes)
+
+## Nadpisy <a name="titles"></a>
 Stejně jako html má i markdown šest úrovní nadpisů.
 
 ```
@@ -28,7 +35,7 @@ Nadpis 2. úrovně
 -------
 ```
 
-## Odstavce
+## Odstavce <a name="paragraphs"></a>
 
 
 ### Zvýraznění
@@ -82,7 +89,7 @@ Je také je možné je libovolně zanořovat.
 
 
 
-## Seznamy
+## Seznamy <a name="lists"></a>
 Seznamy jsou uspořádané množiny položek a je možné do sebe jednotlivé položky vnořovat pomocí odsazení jednotlivých položek.
 
 ```
@@ -159,7 +166,7 @@ Seznam úkolů je možné vytvořit stejným způsobem jako jakýkoliv jiný sez
 
 
 
-## Tabulky
+## Tabulky <a name="tables"></a>
 Tabulky je možné vytvářet pomocí `|`, které oddělují jednotlivé sloupce a `-`, které oddělují hlavičku tabulky od zbytku. Také je možné měnit zarovnání tabulky v oddělení hlavičky pomocí `:` tak jak je to vidět v příkladu.
 
 | Hlavička      |      Tabulky      | Příkladu |
@@ -175,7 +182,7 @@ Horší | Zarovnání | Také funguje
 *do tabulek je samozřejmě* | `možné vkládat` | **i formátovaný text**
 3 | 3 | 3
 
-## Reference
+## Reference <a name="references"></a>
 
 #### _Zmínky_
 Na githubu popřípadě jiných stránkách je možné vkládat do textu odkazy na ostatní uživatele pomocí `@nick`. Využívá se toho například diskuzích nebo při hlášení chyb.
@@ -268,7 +275,7 @@ Stejně jako pro video ani pro audio nemá markdown pro audio podporu. Zde bych 
 </audio>
 ```
 
-## _Kód_
+## _Kód_ <a name="code"></a>
 Markdown umožňuje snadné vlkádání kódu programů pomocí ` `` `.
 
 #### _Řádkový_
@@ -304,7 +311,7 @@ int main()
 }
 ```
 
-## _Emotikony_
+## _Emotikony_ <a name="Emotes"></a>
 Markdown umí používat i základní sadu emotikonů a to pomocí kódu emotikonu a `:`
 
 ```
