@@ -37,7 +37,6 @@ Nadpis 2. úrovně
 
 ## Odstavce <a name="paragraphs"></a>
 
-
 ### Zvýraznění
 Markdown obsahuje čtyři druhy zvýraznění textu kurzívu, tečné písmo, přeškrtnuté písmo a blokové citace. Nemá však syntaxi pro písmo podtržené.
 
@@ -202,7 +201,8 @@ Vytvoření tzv. detailu. Jedná se o text, který je nejprve skrytý a je ho mo
     Informace v detailu.
 </details>
 
-#### Odkazy
+#### Odkazy <a name="links"></a>
+
 Odkazy je možné v markdownu tvořit pomocí kombinace `[]` obsahujících text, který se zobrazí a `()` obsahujících adresu.
 
 ```
@@ -214,10 +214,10 @@ Odkazy je možné v markdownu tvořit pomocí kombinace `[]` obsahujících text
 Zároveň je možné možné k odkazům také vkládat poznámky, které se objeví po najetí kurzoru na odkaz. Poznámku je nutné dát do `""` za adresu.
 
 ```
-[Duck duck go je taky super](https://duckduckgo.com "A personalizuje data.")
+[Duck duck go je taky super](https://duckduckgo.com "A nepersonalizuje data.")
 ```
 
-[Duck duck go je taky super](https://duckduckgo.com "A personalizuje data.")
+[Duck duck go je taky super](https://duckduckgo.com "A nepersonalizuje data.")
 
 Ještě je možnost použít návěští a mít skutečný odkaz kdekoliv dál. Pak se návěští dává do `[]` a při jeho pozdějším definování se adresa odděluje pomocí `:`.
 
@@ -237,6 +237,13 @@ Jakákoliv text meztím.
 [1]: https://www.bing.com
 [Dokonce nezalezi na velikosti pismen ani mezerach]: https://consent.yahoo.com
 
+V markdownu není funkcionalita pro generování obsahu, je však možné využít odkazování se části souboru. Část na kterou je možné odkazovat se vytvoří pomocí
+
+```html
+<a name="links"></a>
+```
+
+Na tuto část je možné se následně odkazovat pomocí běžného odkazu `[Odkazy](#links)`, což vytvoží běžný odkaz viz [Odkazy](#links).
 
 #### Obrázky
 Obrázky se vkládají podobně jako odkazy, je však nutné před `[]` dát `!`.
