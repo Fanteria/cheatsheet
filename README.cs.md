@@ -1,6 +1,6 @@
 # Markdown cheat sheet
 
-Tex je také dostupný v [angličtině](README.md).
+Text in english is [here](README.md).
 
 Tento text je shrnutí syntaxu pro jayk Makrdown, jelikož některé věci, které nepoužívám moc často pravidelně zapomínám, tak jsem si je sepsal. Nadpisy označené kurzívou nejsou součástí základní definice Markdownu a mohou tedy na méně pokročilých platformách pro markdown zůstávat v původním tvaru. Bez toho, aby vytvořili požadovanou grafiku. Na závěr souboru jsou ještě zmíněná některá rošiření, která do markdownu přidává rozšíření [markdown preview enhanced](https://shd101wyy.github.io/markdown-preview-enhanced/#/), které je dostupné pro [Atom](https://atom.io) [VS Code](https://code.visualstudio.com).
 
@@ -12,6 +12,7 @@ __TOC__
 5. [Reference](#references)
 6. [_Kód_](#code)
 7. [_Emotikony_](#Emotes)
+8. [markdown preview enhanced](#preview)
 
 ## Nadpisy <a name="titles"></a>
 Stejně jako html má i markdown šest úrovní nadpisů.
@@ -283,7 +284,7 @@ Stejně jako pro video ani pro audio nemá markdown pro audio podporu. Zde bych 
 ```
 
 ## _Kód_ <a name="code"></a>
-Markdown umožňuje snadné vlkádání kódu programů pomocí ` `` `.
+Markdown umožňuje snadné vkládání kódu programů pomocí ` `` `.
 
 #### _Řádkový_
 Pokud chceme mít kód vložený oprostřed řádky, pak mezi direktivu ` `` ` se vloží příslušný kód.
@@ -328,3 +329,63 @@ Markdown umí používat i základní sadu emotikonů a to pomocí kódu emotiko
 :smile:
 
 Seznam emotikonů je množné najít [zde](https://www.webfx.com/tools/emoji-cheat-sheet/).
+
+## _Markdown preview enhanced_ <a name="preview"></a>
+
+Toto rozšíření má mnoho funkcionalit, zde je popsáno pouze několik mnou využívaných. Kompletní dokumentace je na jejich [stránce](https://shd101wyy.github.io/markdown-preview-enhanced/#/). Jesná se o rozšíření přidávající funkcionality jako komplexnější zápis tabulek, TOC, LaTeX, plantUML, vykonávání kódu, ... Také umožňuje vygenerování HTML, pdf, epub a dalších z tohoto vytvořeného markdownového souboru.
+
+Jelikož ale není podporován, tak následující čísti budou obsahovat pouze příklady pomocí kódu, nikoliv samotnou vizualizaci.
+
+### TOC
+Toto rozšíření umožňuje vytvořit obsah pomocí přidáním `[TOC]` do libovolné části textu. Tento obsah je vygenerován z nadpisů obsažených v souboru.
+
+### Rozšíření tabulek.
+Rozšíření umožňuje slučovat buňky v tabulkách. Je však tuto možnost nutné možnosti povolit v nastavení, pomocí povolení `enableExtendedTableSyntax`. Buňky tabulek se následně dají spojovat pomocí `^` pro propojení buňky spodní s buňkou horní a pro horizontální propojení je možné využít `>` nebo mezery.
+
+### Dolnín a horní index
+Dolní index je možné napsat v tomto rozšíření pomocí `~dolní index~` například `H~2~O` vypíše chemický vzorec vody.
+
+Naproti tomu horní index je možné napsat pomocí `^horní index^`.
+
+### Poznámky pod čarou
+Rozšíření také umožňuje přidávat poznámky pod čarou. To je možné udělat pomocí kombinace `[^1]` v textu, který se na poznámku odkazuje a následně `[^1]: Text poznámky pod čarou` na konci textu. Číslo `1` označuje číslo poznámky od čarou.
+
+### Zvýraznění
+Text je možné zvýraznit pomocí `==zvýrazněný text==`.
+
+### Matematika
+Matematika je zpřístupněna pomocí jazyka logiky jazyka [LaTeX](https://cs.wikipedia.org/wiki/LaTeX). Tedy drží i stejnou syntaxi. Možnosti matematického zápisu v tomto jazyce jsou velmi rozsáhlé a nejsou zde popsány, níže je jenom seznam několika užitečných znaků, které je možné využít. Reálná generování je zprostředkování pomocí knihoven KaTeX nebo MathJax.
+
+Matematický zápis je možné zpřístupnit pomocí `$matematický zápis$` pro zápisy řádkové nebo pomocí `$$matematický zápis$$` pro zápisy blokové.
+
+| Znak | Zápis      | Znak | Zápis      |
+| :-:  | :-:        | :-:  | :-:        |
+| α    | `\alpha`   | A    | `\Alpha`   |
+| β    | `\beta`    | B    | `\Beta`    |
+| γ    | `\gamma`   | Γ    | `\Gamma`   |
+| δ    | `\delta`   | Δ    | `\Delta`   |
+| ε    | `\epsilon` | E    | `\Epsilon` |
+| ζ    | `\zeta`    | H    | `\Zeta`    |
+| η    | `\eta`     | Θ    | `\Eta`     |
+| θ    | `\theta`   | I    | `\Theta`   |
+| ι    | `\iota`    | K    | `\Iota`    |
+| ϰ    | `\kappa`   | Λ    | `\Kappa`   |
+| λ    | `\lambda`  | M    | `\Lambda`  |
+| μ    | `\mu`      | N    | `\Mu`      |
+| ν    | `\nu`      | Ξ    | `\Nu`      |
+| ξ    | `\xi`      | O    | `\Xi`      |
+| π    | `\pi`      | Π    | `\Pi`      |
+| ρ    | `\rho`     | P    | `\Rho`     |
+| σ    | `\sigma`   | Σ    | `\Sigma`   |
+| τ    | `\tau`     | T    | `\Tau`     |
+| υ    | `\upsilon` | Υ    | `\Upsilon` |
+| ϕ    | `\phi`     | Φ    | `\Phi`     |
+| χ    | `\chi`     | X    | `\Chi`     |
+| ψ    | `\psi`     | Ψ    | `\Psi`     |
+| ω    | `\omega`   | Ω    | `\Omega`   |
+
+### Kód
+Rozšíření umožňuje spouštět zdrojový kód, je však nutné to povolit v nastavení. Takovéto spozštění kódu je potenciální bezpečnostní riziko, jelikož by poznámky od jiného člověka mohli obsahovat škodlivý kód, který by se tímto způsobem spustil. Používat tuto dunkcionalitu je tak vhodné pouze pokud otevíráte jenom vlastní markdownové soubory, a nebo markdownové soubory, lidí, kterým naprosto věříte.
+
+### Další
+Toto rozšíření umožňuje dále tvorbu prezentací, grafů v různýzných jazycích jako je PlantUML, FlowChart, WaveDown, ...
