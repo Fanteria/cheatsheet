@@ -12,7 +12,7 @@ __TOC__
 5. [Reference](#references)
 6. [_Kód_](#code)
 7. [_Emotikony_](#Emotes)
-8. [markdown preview enhanced](#preview)
+8. [Markdown preview enhanced](#preview)
 
 ## Nadpisy <a name="titles"></a>
 Stejně jako html má i markdown šest úrovní nadpisů.
